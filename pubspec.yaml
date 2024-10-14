@@ -1,0 +1,34 @@
+name: flutter_utils
+description: "Flutter utilties for common tasks."
+version: 0.0.1
+repository: https://github.com/mcquenji/flutter_utils
+publish_to: none
+
+environment:
+  sdk: ">=3.4.3 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  bloc: ^8.1.4
+  collection: ^1.18.0
+  either_dart: ^1.0.0
+  flutter:
+    sdk: flutter
+  flutter_modular: ^6.3.4
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+  mcquenji_core:
+    git:
+      url: https://github.com/mcquenji/mcquenji_core.git
+
+dev_dependencies:
+  architecture_linter: ^0.2.2
+  build_runner: ^2.4.11
+  flutter_gen: ^5.6.0
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+  flutterando_analysis: ^0.0.2
+  freezed: ^2.5.2
+  json_serializable: ^6.8.0
+  test: ^1.25.2
