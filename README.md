@@ -8,5 +8,5 @@ Flutter utilties for common tasks.
 dependencies:
   flutter_utils:
     git:
-      url: git://github.com/mcquenji/flutter_utils.git
+      url: https://github.com/mcquenji/flutter_utils.git
 ```
