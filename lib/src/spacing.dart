@@ -36,24 +36,19 @@ class Spacing extends SizedBox {
   });
 
   /// Both vertical and horizontal [xsSpacing]
-  Spacing.xs({Key? key})
-      : this._(key: key, height: xsSpacing, width: xsSpacing);
+  Spacing.xs({Key? key}) : this._(key: key, height: xsSpacing, width: xsSpacing);
 
   /// Both vertical and horizontal [smallSpacing]
-  Spacing.small({Key? key})
-      : this._(key: key, height: smallSpacing, width: smallSpacing);
+  Spacing.small({Key? key}) : this._(key: key, height: smallSpacing, width: smallSpacing);
 
   /// Both vertical and horizontal [mediumSpacing]
-  Spacing.medium({Key? key})
-      : this._(key: key, height: mediumSpacing, width: mediumSpacing);
+  Spacing.medium({Key? key}) : this._(key: key, height: mediumSpacing, width: mediumSpacing);
 
   /// Both vertical and horizontal [largeSpacing]
-  Spacing.large({Key? key})
-      : this._(key: key, height: largeSpacing, width: largeSpacing);
+  Spacing.large({Key? key}) : this._(key: key, height: largeSpacing, width: largeSpacing);
 
   /// Both vertical and horizontal [xlSpacing]
-  Spacing.xl({Key? key})
-      : this._(key: key, height: xlSpacing, width: xlSpacing);
+  Spacing.xl({Key? key}) : this._(key: key, height: xlSpacing, width: xlSpacing);
 
   /// Vertical [xsSpacing]
   Spacing.xsVertical({Key? key}) : this._(key: key, height: xsSpacing);
@@ -86,17 +81,27 @@ class Spacing extends SizedBox {
   Spacing.xlHorizontal({Key? key}) : this._(key: key, width: xlSpacing);
 
   /// Value for extra small spacing.
+  ///
+  /// Defaults to `5`.
   static double xsSpacing = 5;
 
   /// Value for small spacing.
+  ///
+  /// Defaults to `10`.
   static double smallSpacing = 10;
 
   /// Value for medium spacing.
+  ///
+  /// Defaults to `20`.
   static double mediumSpacing = 20;
 
   /// Value for large spacing.
+  ///
+  /// Defaults to `25`.
   static double largeSpacing = 25;
 
   /// Value for extra large spacing.
+  ///
+  /// Defaults to `30`.
   static double xlSpacing = 30;
 }
