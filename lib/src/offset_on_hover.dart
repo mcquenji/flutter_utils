@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mcquenji_core/mcquenji_core.dart';
+import 'package:flutter_utils/flutter_utils.dart';
 
 /// Offsets the child to the given [offset] when hovered.
 class OffsetOnHover extends HoverableWidget {

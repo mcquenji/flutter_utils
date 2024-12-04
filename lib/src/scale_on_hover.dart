@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mcquenji_core/mcquenji_core.dart';
+import 'package:flutter_utils/flutter_utils.dart';
 
 /// Scales the child to the given [scale] when hovered.
 class ScaleOnHover extends HoverableWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mcquenji_core/mcquenji_core.dart';
+import 'package:flutter_utils/flutter_utils.dart';
 
 /// Transforms the child to the given [transform] when hovered.
 class TransformOnHover extends HoverableWidget {

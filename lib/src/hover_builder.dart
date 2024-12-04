@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mcquenji_core/mcquenji_core.dart';
+import 'package:flutter_utils/flutter_utils.dart';
 
 /// A builder to adapt to the widget being hoverd or not.
 class HoverBuilder extends HoverableWidget {
@@ -16,6 +16,5 @@ class HoverBuilder extends HoverableWidget {
   final Widget Function(BuildContext context, bool isHovering) builder;
 
   @override
-  Widget build(BuildContext context, bool isHovering) =>
-      builder(context, isHovering);
+  Widget build(BuildContext context, bool isHovering) => builder(context, isHovering);
 }
