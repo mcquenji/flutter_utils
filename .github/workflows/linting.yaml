@@ -1,0 +1,32 @@
+name: CI/Lint
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Lint Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📚 Checkout code
+        uses: actions/checkout@v3
+
+      - name: 🐦 Set up Flutter
+        uses: flutter-actions/setup-flutter@v3.6
+        with:
+          channel: stable
+          version: latest
+
+      - name: 📦 Install dependencies
+        run: flutter pub get
+
+      - name: 🔍 Dart Analyze
+        uses: ValentinVignal/action-dart-analyze@v0.17
+        with:
+            fail-on: format
