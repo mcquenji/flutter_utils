@@ -1,6 +1,7 @@
 library flutter_utils;
 
 export 'src/animation_utils.dart';
+export 'src/conditional_wrapper.dart';
 export 'src/declarative_padding.dart';
 export 'src/hover_builder.dart';
 export 'src/hoverable_widget.dart';
