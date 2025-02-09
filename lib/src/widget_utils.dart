@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/widgets.dart';
 
 /// Provides a set of utility methods to work with spacing in a more expressive way.
@@ -193,5 +195,29 @@ extension SpaceExt on List<Widget> {
   /// ```
   List<Widget> vSpaced(double space) {
     return insertBetween(space.vSpacing).toList();
+  }
+}
+
+/// Provides a less verbose way to add a post-frame callback to a [StatelessWidget].
+extension StatelessPostframe on StatelessWidget {
+  /// Adds a post-frame callback to the current widget.
+  ///
+  /// Shortcut for [WidgetsBinding.instance.addPostFrameCallback].
+  void runAfterBuild(FutureOr<void> Function() callback) {
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      await callback();
+    });
+  }
+}
+
+/// Provides a less verbose way to add a post-frame callback to a [State].
+extension StatefulPostframe on State {
+  /// Adds a post-frame callback to the current widget.
+  ///
+  /// Shortcut for [WidgetsBinding.instance.addPostFrameCallback].
+  void runAfterBuild(FutureOr<void> Function() callback) {
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      await callback();
+    });
   }
 }
