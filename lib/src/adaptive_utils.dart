@@ -25,6 +25,10 @@ extension AdaptiveContext on BuildContext {
 mixin AdaptiveState<T extends StatefulWidget> on State<T> implements Adaptive {
   @override
   Widget build(BuildContext context) => Adaptive.build(context, this);
+
+  @override
+  Widget transitionBuilder(Widget child, Animation<double> animation, BuildContext context) =>
+      Adaptive.defaultTransitionBuilder(child, animation, context);
 }
 
 /// Mixin for [StatelessWidget]s that need to build adaptive layouts.
@@ -35,6 +39,10 @@ mixin AdaptiveState<T extends StatefulWidget> on State<T> implements Adaptive {
 mixin AdaptiveWidget on StatelessWidget implements Adaptive {
   @override
   Widget build(BuildContext context) => Adaptive.build(context, this);
+
+  @override
+  Widget transitionBuilder(Widget child, Animation<double> animation, BuildContext context) =>
+      Adaptive.defaultTransitionBuilder(child, animation, context);
 }
 
 /// Abstract class that provides an adaptive layout system for Flutter widgets.
