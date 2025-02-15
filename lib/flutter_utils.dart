@@ -1,5 +1,6 @@
 library flutter_utils;
 
+export 'src/adaptive_utils.dart';
 export 'src/animation_utils.dart';
 export 'src/conditional_wrapper.dart';
 export 'src/declarative_padding.dart';
